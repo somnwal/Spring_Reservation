@@ -1,6 +1,6 @@
 # Spring_Reservation
 
-숙박예약 사이트를 만들어가며 배우는 SpringBoot + React.js<br/>
+SpringBoot + React.js 로 만드는 숙박예약 사이트<br/>
 (개인 공부를 위한 레포지토리)
 
 <br/><br/><br/>
