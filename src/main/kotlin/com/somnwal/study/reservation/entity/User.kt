@@ -25,8 +25,7 @@ data class User(
 
     @NotBlank(message = "비밀번호를 입력해주세요.")
     var password: String,
-    var firstName: String,
-    var lastName: String,
+    var name: String,
 
     @NotBlank(message = "휴대폰 번호를 입력해주세요.")
     @Column(name="phone_number")

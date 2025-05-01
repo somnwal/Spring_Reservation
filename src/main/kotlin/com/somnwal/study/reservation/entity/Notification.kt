@@ -24,7 +24,7 @@ data class Notification (
 
     val subject: String,
 
-    @NotBlank(message = "수신자는 필수입력 사항입니다.")
+    @NotBlank(message = "수신자는 필수입력 항목입니다.")
     val recipient: String,
 
     val body: String,
