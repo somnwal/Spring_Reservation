@@ -6,7 +6,7 @@ plugins {
 	id 'org.jetbrains.kotlin.plugin.jpa' version '1.9.25'
 }
 
-group = 'com.somnwal.study.hotel'
+group = 'com.somnwal.study.reservation'
 version = '0.0.1-SNAPSHOT'
 
 java {
@@ -23,7 +23,7 @@ configurations {
 
 repositories {
 	mavenCentral()
-	maven { url 'https://repo.spring.io/snapshot' }
+	maven { url = uri("https://repo.spring.io/snapshot") }
 }
 
 dependencies {
@@ -34,6 +34,11 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'com.fasterxml.jackson.module:jackson-module-kotlin'
 	implementation 'org.jetbrains.kotlin:kotlin-reflect'
+
+	implementation 'org.modelmapper:modelmapper:3.2.2'
+	implementation 'io.jsonwebtoken:jjwt:0.12.6'
+	implementation 'com.stripe:stripe-java:28.2.0'
+
 	compileOnly 'org.projectlombok:lombok'
 	runtimeOnly 'org.postgresql:postgresql'
 	annotationProcessor 'org.projectlombok:lombok'
@@ -45,7 +50,14 @@ dependencies {
 
 kotlin {
 	compilerOptions {
-		freeCompilerArgs.addAll '-Xjsr305=strict'
+		freeCompilerArgs.addAll('-Xjsr305=strict')
+	}
+	jvmToolchain(17)
+}
+
+tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile) {
+	kotlinOptions {
+		jvmTarget = "17"
 	}
 }
 

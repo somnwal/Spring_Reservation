@@ -1,11 +1,11 @@
-package com.somnwal.study.hotel.hotel_booking
+package com.somnwal.study.reservation
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class HotelBookingApplication
+class ReservationApplication
 
 fun main(args: Array<String>) {
-	runApplication<HotelBookingApplication>(*args)
+	runApplication<ReservationApplication>(*args)
 }
