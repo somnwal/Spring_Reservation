@@ -5,12 +5,12 @@
 
 ---
 
-# 실행방법
+### 실행방법
 ```bash
 ./gradlew bootRun
 ```
 
-# 사용기술
+### 사용기술
 
 | 분류 | 기술 | 비고 |
 |:---:|:---|:---|
@@ -21,9 +21,7 @@
 |  | JWT ![JWT](https://img.shields.io/badge/JWT-000000?logo=json-web-tokens&logoColor=white) |  |
 |  | ModelMapper ![ModelMapper](https://img.shields.io/badge/ModelMapper-3.2.2-yellow) |  |
 |  | Stripe ![Stripe](https://img.shields.io/badge/Stripe-008CDD?logo=stripe&logoColor=white) | 온라인 결제 처리를 위한 API 서비스 |
+| **프론트엔드** | React ![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black) |  |
 | **데이터베이스** | PostgreSQL ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white) |  |
 | **CI/CD** | Docker (연동 예정) ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white) |  |
 | **개발 도구** | Gradle ![Gradle](https://img.shields.io/badge/Gradle-02303A?logo=gradle&logoColor=white) |  |
-| **프론트엔드** | React ![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black) |  |
-
-
