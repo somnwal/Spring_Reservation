@@ -1,36 +1,29 @@
-# Read Me First
-The following was discovered as part of building this project:
+# Spring_Reservation
 
-* The original package name 'com.somnwal.study.hotel.hotel-booking' is invalid and this project uses 'com.somnwal.study.hotel.hotel_booking' instead.
+숙박예약 사이트를 만들어가며 배우는 SpringBoot + React.js
+(개인 공부를 위한 레포지토리 입니다)
 
-# Getting Started
+---
 
-### Reference Documentation
-For further reference, please consider the following sections:
+# 실행방법
+```bash
+./gradlew bootRun
+```
 
-* [Official Gradle documentation](https://docs.gradle.org)
-* [Spring Boot Gradle Plugin Reference Guide](https://docs.spring.io/spring-boot/3.3.12-SNAPSHOT/gradle-plugin)
-* [Create an OCI image](https://docs.spring.io/spring-boot/3.3.12-SNAPSHOT/gradle-plugin/packaging-oci-image.html)
-* [Spring Web](https://docs.spring.io/spring-boot/3.3.12-SNAPSHOT/reference/web/servlet.html)
-* [Spring Data JPA](https://docs.spring.io/spring-boot/3.3.12-SNAPSHOT/reference/data/sql.html#data.sql.jpa-and-spring-data)
-* [Validation](https://docs.spring.io/spring-boot/3.3.12-SNAPSHOT/reference/io/validation.html)
-* [Spring Security](https://docs.spring.io/spring-boot/3.3.12-SNAPSHOT/reference/web/spring-security.html)
-* [Java Mail Sender](https://docs.spring.io/spring-boot/3.3.12-SNAPSHOT/reference/io/email.html)
+# 사용기술
 
-### Guides
-The following guides illustrate how to use some features concretely:
+| 분류 | 기술 | 비고 |
+|:---:|:---|:---|
+| **백엔드** | ![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?logo=kotlin&logoColor=white) |  |
+|  | ![Spring Boot](https://img.shields.io/badge/Spring_Boot-3.3.x-6DB33F?logo=spring-boot&logoColor=white) |  |
+|  | ![Spring Security](https://img.shields.io/badge/Spring_Security-6DB33F?logo=spring-security&logoColor=white) |  |
+|  | ![Spring Data JPA](https://img.shields.io/badge/Spring_Data_JPA-6DB33F?logo=spring&logoColor=white) |  |
+|  | ![JWT](https://img.shields.io/badge/JWT-000000?logo=json-web-tokens&logoColor=white) |  |
+|  | ![ModelMapper](https://img.shields.io/badge/ModelMapper-3.2.2-yellow) |  |
+|  | ![Stripe](https://img.shields.io/badge/Stripe-008CDD?logo=stripe&logoColor=white) | 온라인 결제 처리를 위한 API 서비스 |
+| **데이터베이스** | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white) |  |
+| **CI/CD** | ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white) |  |
+|  | ![Gradle](https://img.shields.io/badge/Gradle-02303A?logo=gradle&logoColor=white) |  |
+| **프론트엔드** | ![React](https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black) |  |
 
-* [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
-* [Serving Web Content with Spring MVC](https://spring.io/guides/gs/serving-web-content/)
-* [Building REST services with Spring](https://spring.io/guides/tutorials/rest/)
-* [Accessing Data with JPA](https://spring.io/guides/gs/accessing-data-jpa/)
-* [Validation](https://spring.io/guides/gs/validating-form-input/)
-* [Securing a Web Application](https://spring.io/guides/gs/securing-web/)
-* [Spring Boot and OAuth2](https://spring.io/guides/tutorials/spring-boot-oauth2/)
-* [Authenticating a User with LDAP](https://spring.io/guides/gs/authenticating-ldap/)
-
-### Additional Links
-These additional references should also help you:
-
-* [Gradle Build Scans – insights for your project's build](https://scans.gradle.com#gradle)
 
