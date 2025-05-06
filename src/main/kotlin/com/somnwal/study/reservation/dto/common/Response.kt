@@ -15,33 +15,33 @@ import java.time.LocalDateTime
 @JsonInclude(JsonInclude.Include.NON_NULL)
 data class Response (
     val status: Int,
-    val message: String,
+    val message: String = "",
 
     // Login
-    val token: String,
-    val userRole: UserRole,
-    val isActive: Boolean,
-    val expirationTime: String,
+    val token: String? = null,
+    val userRole: UserRole? = null,
+    val isActive: Boolean = false,
+    val expirationTime: String? = null,
 
     // Data Output
-    val user: UserDto,
-    val users: List<UserDto>,
+    val user: UserDto? = null,
+    val users: List<UserDto>? = null,
 
     // Reservation
-    val reservation: ReservationDto,
-    val reservations: List<ReservationDto>,
+    val reservation: ReservationDto? = null,
+    val reservations: List<ReservationDto>? = null,
 
     // Room
-    val room: RoomDto,
-    val rooms: List<RoomDto>,
+    val room: RoomDto? = null,
+    val rooms: List<RoomDto>? = null,
 
     // Payment
-    val payment: PaymentDto,
-    val payments: List<PaymentDto>,
+    val payment: PaymentDto? = null,
+    val payments: List<PaymentDto>? = null,
 
     // Notification
-    val notification: NotificationDto,
-    val notifications: List<NotificationDto>,
+    val notification: NotificationDto? = null,
+    val notifications: List<NotificationDto>? = null,
 
     val timestamp: LocalDateTime = LocalDateTime.now(),
 )
